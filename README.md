@@ -1,7 +1,7 @@
 PageSpeed Insights API
 ======================
 
-A PHP module to interact with the [PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v2/getting-started).
+A PHP module to interact with the [PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v2/getting-started) on Symfony project.
 
 Installation
 ============
