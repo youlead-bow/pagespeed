@@ -1,0 +1,17 @@
+{
+  "name": "youleadbow/pagespeed",
+  "type": "library",
+  "description": "A PHP library to interact with the PageSpeed Insights API",
+  "keywords": ["PageSpeed", "Insights", "API", "Google"],
+  "homepage": "https://github.com/youleadbow/pagespeed",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "symfony/http-client": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "PageSpeed\\": "src/"
+    }
+  }
+}
