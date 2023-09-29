@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+namespace PageSpeed\Insights;
 
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
