@@ -46,6 +46,14 @@ class Service
      */
     public function getResults(string $url, string $strategy, array $extraParams = []): array
     {
+        $categories = '';
+        if(isset($extraParams['category'])){
+            foreach ($extraParams['category'] as $category_id){
+                $categories .= '&category='.$category_id;
+            }
+            unset($extraParams['category']);
+        }
+
         $params = array_merge([
             'locale' => $this->locales,
             'key' => $this->apiKey,
@@ -53,10 +61,11 @@ class Service
             'strategy' => $strategy
         ], $extraParams);
 
-        $response = $this->client->request('GET', $this->apiUrl, [
-            'query' => $params,
-            'timeout' => $this->timeout
-        ]);
+        $response = $this->client->request(
+            'GET',
+            $this->apiUrl . '?' . http_build_query($params) . $categories,
+            ['timeout' => $this->timeout]
+        );
 
         return $response->toArray();
     }
