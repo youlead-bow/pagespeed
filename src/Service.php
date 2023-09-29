@@ -48,7 +48,7 @@ class Service
     {
         $categories = '';
         if(isset($extraParams['category'])){
-            foreach ($extraParams['category'] as $category_id){
+            foreach ((array) $extraParams['category'] as $category_id){
                 $categories .= '&category='.$category_id;
             }
             unset($extraParams['category']);
