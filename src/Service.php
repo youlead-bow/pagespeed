@@ -44,7 +44,7 @@ class Service
      * @throws DecodingExceptionInterface
      * @throws ClientExceptionInterface
      */
-    private function getResults(string $url, string $strategy, array $extraParams = []): array
+    public function getResults(string $url, string $strategy, array $extraParams = []): array
     {
         $params = array_merge([
             'locale' => $this->locales,

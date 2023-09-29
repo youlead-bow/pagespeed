@@ -31,6 +31,6 @@ Basic usage
 ```php
 <?php
 
-$pageSpeed = new \PageSpeed\Insights\Service();
+$pageSpeed = new PageSpeed\Service();
 $pageSpeed->getResults('http://www.example.com');
 ```
