@@ -11,7 +11,7 @@ The best way to install the library is by using [Composer](http://getcomposer.or
 ``` javascript
 {
     "require": {
-        "youleadbow/pagespeed": "~1.0"
+        "youlead-bow/pagespeed": "~1.0"
     }
 }
 ```
